@@ -1,3 +1,6 @@
+![](https://github.com/hoanganhx86/wallet-keeper/actions/workflows/ci.yml/badge.svg)
+
+
 # Wallet Keeper
 
 This project is a **single-page application** (SPA) built with modern web technologies, designed to manage cryptocurrency wallets efficiently. It leverages a robust architecture and cutting-edge tools to ensure scalability, maintainability, and performance.
@@ -34,10 +37,9 @@ This project is a **single-page application** (SPA) built with modern web techno
 
 ---
 
-## 🛠️ **Project Structure**
+## 🛠️ **Demo**
 
-The project follows a modular and scalable architecture:
-
+![Demo](github/demo.mov)
 
 
 🚧 **Out of Scope Features**
