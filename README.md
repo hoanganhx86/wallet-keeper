@@ -39,8 +39,9 @@ This project is a **single-page application** (SPA) built with modern web techno
 
 ## 🛠️ **Demo**
 
-![Demo](github/demo.mov)
+[![Demo](https://img.youtube.com/vi/-ZjUtrqNGI0/0.jpg)](https://www.youtube.com/watch?v=-ZjUtrqNGI0)
 
+---
 
 🚧 **Out of Scope Features**
 While the current implementation focuses on core functionality, the following features are planned for future iterations:
@@ -51,6 +52,8 @@ While the current implementation focuses on core functionality, the following fe
 - **UI/UX Improvements**: Refine the design and user experience for better usability.
 
 **And more...**
+
+---
 
 🧪 **Testing Strategy**
 - **Unit Tests**: Written using React Testing Library to ensure component reliability.
