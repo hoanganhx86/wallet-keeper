@@ -23,7 +23,7 @@ export function WalletList({
   onRefreshBalances,
   onViewPrivateKey,
 }: WalletListProps) {
-  const isLoadignRef = React.useRef(false)
+  const isLoadignRef = React.useRef(false);
 
   const getBalanceDisplay = (wallet: WalletInfo) => {
     if (!wallet.balances) return 'Balance: Loading...';
@@ -41,9 +41,7 @@ export function WalletList({
       onRefreshBalances();
       isLoadignRef.current = false;
     })();
-    
-  }, [selectedNetwork,]);
-
+  }, [selectedNetwork]);
 
   return (
     <div className="mt-10">

@@ -12,9 +12,7 @@ export function PrivateKeyDisplay({ wallet, privateKey, onDone }: PrivateKeyDisp
 
   return (
     <div className="mt-5 p-4 bg-slate-50 rounded-lg border border-green-600">
-      <h3 className="text-base mt-0 text-slate-900 font-semibold mb-2">
-        Wallet Information
-      </h3>
+      <h3 className="text-base mt-0 text-slate-900 font-semibold mb-2">Wallet Information</h3>
       <div className="mb-2.5">
         <strong className="text-sm">Name:</strong>
         <span className="ml-2.5 text-sm">{wallet.name}</span>
@@ -32,7 +30,7 @@ export function PrivateKeyDisplay({ wallet, privateKey, onDone }: PrivateKeyDisp
             {showPrivateKey ? privateKey : '••••••••••••••••••••••••••••••••••••'}
           </code>
           <button
-            id='toggle-private-key'
+            id="toggle-private-key"
             onClick={() => setShowPrivateKey(!showPrivateKey)}
             className="mt-2 text-blue-600 text-sm underline cursor-pointer"
           >

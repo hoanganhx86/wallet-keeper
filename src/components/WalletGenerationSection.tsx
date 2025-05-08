@@ -11,7 +11,6 @@ export function WalletGenerationSection({
   error,
   onGenerateWallet,
 }: WalletGenerationSectionProps) {
-
   return (
     <div>
       <h2 className="text-xl font-bold text-blue-800 mb-6">Generate New Wallet</h2>

@@ -53,7 +53,7 @@ export function WalletGenerator() {
         wallet={currentWallet}
         privateKey={privateKey}
         onDone={() => {
-          handleDoneViewing()
+          handleDoneViewing();
         }}
       />
     </div>

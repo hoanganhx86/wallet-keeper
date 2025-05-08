@@ -115,7 +115,9 @@ describe('WalletList', () => {
   it('calls onViewPrivateKey when view private key button is clicked', () => {
     const { defaultProps } = renderWalletList();
 
-    const viewPrivateKeyButtons = screen.getAllByRole('button', { name: testData.buttonLabels.viewPrivateKey });
+    const viewPrivateKeyButtons = screen.getAllByRole('button', {
+      name: testData.buttonLabels.viewPrivateKey,
+    });
     fireEvent.click(viewPrivateKeyButtons[0]);
 
     expect(defaultProps.onViewPrivateKey).toHaveBeenCalledWith(testData.wallets[0].id);

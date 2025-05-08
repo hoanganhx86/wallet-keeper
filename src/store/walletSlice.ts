@@ -227,7 +227,7 @@ const walletSlice = createSlice({
       state.isLoading = false;
       state.error = action.payload as string;
     });
-    
+
     // Handle refreshBalancesForSelectedNetwork
     builder.addCase(refreshBalancesForSelectedNetwork.pending, state => {
       state.isLoading = true;

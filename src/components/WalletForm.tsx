@@ -110,9 +110,9 @@ export function WalletForm({ onSubmit, error: apiError, isLoading }: WalletFormP
       </div>
       <button
         onClick={handleSubmit}
-        id='generate-wallet'
-        aria-label='generate wallet'
-        type='button'
+        id="generate-wallet"
+        aria-label="generate wallet"
+        type="button"
         disabled={isSubmitting || isLoading}
         className="w-full bg-blue-800 text-white px-4 py-2.5 border-none rounded font-semibold text-base cursor-pointer disabled:opacity-70 disabled:cursor-wait mb-8"
       >

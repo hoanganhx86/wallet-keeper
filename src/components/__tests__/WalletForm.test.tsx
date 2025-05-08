@@ -33,10 +33,10 @@ describe('WalletForm', () => {
   const fillPasswordFields = (password: string, confirmPassword: string) => {
     const passwordInput = screen.getByLabelText(/Secure Password/);
     const confirmPasswordInput = screen.getByLabelText(/Confirm Password/);
-    
+
     fireEvent.change(passwordInput, { target: { value: password } });
     fireEvent.change(confirmPasswordInput, { target: { value: confirmPassword } });
-    
+
     return { passwordInput, confirmPasswordInput };
   };
 
@@ -87,7 +87,7 @@ describe('WalletForm', () => {
     // First set a short password to trigger error
     fillPasswordFields(testData.shortPassword, testData.shortPassword);
     submitForm();
-    
+
     expect(screen.getByText(errorMessages.passwordTooShort)).toBeInTheDocument();
 
     // Then set valid matching passwords

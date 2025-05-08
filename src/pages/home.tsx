@@ -20,7 +20,7 @@ export default function Home() {
       </main>
 
       <footer className="w-full bg-slate-200 py-4 items-center text-center text-sm">
-          <p>Wallet Keeper - Secure EVM Wallet Management</p>
+        <p>Wallet Keeper - Secure EVM Wallet Management</p>
       </footer>
     </div>
   );

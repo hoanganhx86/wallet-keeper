@@ -20,7 +20,6 @@ const testData = {
   onDone: vi.fn(),
 };
 
-
 describe('PrivateKeyDisplay', () => {
   const defaultProps = {
     wallet: testData.wallet,

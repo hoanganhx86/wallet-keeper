@@ -188,15 +188,18 @@ describe('walletSlice', () => {
 
     it('should handle refreshBalancesForSelectedNetwork.fulfilled', () => {
       const state = createStateWithWallet();
-      const updatedWallets = [{
-        ...testData.wallet,
-        balances: [
-          testData.updatedBalances.ethereum,
-          testData.updatedBalances.binance,
-        ],
-      }];
+      const updatedWallets = [
+        {
+          ...testData.wallet,
+          balances: [testData.updatedBalances.ethereum, testData.updatedBalances.binance],
+        },
+      ];
 
-      const action = refreshBalancesForSelectedNetwork.fulfilled(updatedWallets, 'requestId', undefined);
+      const action = refreshBalancesForSelectedNetwork.fulfilled(
+        updatedWallets,
+        'requestId',
+        undefined
+      );
 
       const nextState = walletReducer(state, action);
       expect(nextState.wallets).toEqual(updatedWallets);

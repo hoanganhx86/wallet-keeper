@@ -7,7 +7,6 @@ describe('WalletGenerationSection', () => {
     isLoading: false,
     error: null,
     onGenerateWallet: vi.fn(),
-
   };
 
   it('renders wallet generation form', () => {
